@@ -1,0 +1,11 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("welcome to c#");
+            Console.WriteLine(args[0]);
+            Console.WriteLine(args[1]);
+            Console.WriteLine(args[2]);
+            Console.ReadLine();
+        }
+    }
