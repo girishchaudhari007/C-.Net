@@ -1,0 +1,23 @@
+ class demo
+    {
+        class Person
+        {
+            private int name; // field
+            public int Name   // property
+            {
+                get { return name; }
+                set { name = value; }
+            }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Person myObj = new Person();
+                myObj.Name = 100;
+                Console.WriteLine(myObj.Name);
+                Console.ReadLine();
+            }
+        }
+    }
