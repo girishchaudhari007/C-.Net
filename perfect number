@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class demo
+    {
+        int i, no, sum = 0, temp;
+        public void show()
+        {
+            Console.WriteLine("enter the number");
+            no = Convert.ToInt32(Console.ReadLine());
+            temp = no;
+
+            for (i = 1; i < no; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            if (temp == sum)
+            {
+                Console.WriteLine("perfect no");
+            }
+            else
+            {
+                Console.WriteLine("not perfect no");
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            demo d1 = new demo();
+            d1.show();
+            Console.ReadLine();
+        }
+    }
+}
