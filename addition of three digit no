@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class demo
+    {
+        int r, no, sum = 0, temp;
+        public void show()
+        {
+            Console.WriteLine("enter the number");
+            no = Convert.ToInt32(Console.ReadLine());
+            temp = no;
+
+            while (no > 0)
+            {
+                r = no % 10;
+                sum = sum + r;
+                no = no / 10;
+            }
+
+          Console.WriteLine("addition of three no:--->"+sum);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            demo d1 = new demo();
+            d1.show();
+            Console.ReadLine();
+        }
+    }
+}
